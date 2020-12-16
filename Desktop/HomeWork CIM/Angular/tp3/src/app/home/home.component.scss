@@ -1,0 +1,58 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% auto; 
+}
+
+.col {
+    padding: .4em 1.3em;
+}
+
+.color-dark {
+    background: #2885C4;
+}
+.color-light {
+    background: #57B3F1,
+}
+
+input.txt{
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+input.btn{
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    background: rgba(230, 35, 10, 0.726);
+    color: rgb(229, 239, 247); 
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: 2s all;
+}
+
+.bg_green:focus{
+    background: rgba(35, 230, 10, 0.726) !important;
+}
+
+.bg_green:hover{
+    background: rgba(35, 100, 10, 0.726);
+}
+
+
+
+.life-container{
+    background: #3FA0E1;
+    padding: .5em;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.rotate3deg{
+    transform: rotateZ(3deg);
+}
+
+.rotateneg3deg{
+    transform: rotateZ(-3deg);
+}

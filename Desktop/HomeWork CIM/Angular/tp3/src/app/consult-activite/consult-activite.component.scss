@@ -1,0 +1,28 @@
+button.btn{
+    border: 0;
+    padding: 1em 1em;
+    font-size: 0.9rem;
+    color: rgb(229, 239, 247); 
+    margin-bottom: 1em;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 2s all;
+    max-width: 150px;
+}
+
+.red{
+    background: rgba(230, 35, 10, 0.726);
+}
+.green{
+    background: rgba(35, 230, 10, 0.726);
+}
+.blue{
+    background: rgba(10, 35, 230, 0.726);
+}
+
+
+
+
+.d-none{
+    display: none;
+}

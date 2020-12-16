@@ -1,0 +1,22 @@
+<div class="container color-dark rotate3deg" >
+    <div class="col">
+        <p>Un élément de liste</p>
+    </div>
+    <div class="col">
+        <p>Ma liste d'éléments({{nbItems}})</p>
+    </div>
+</div>
+<div class="container color-light rotateneg3deg"  [@animobjectifs]="getActiviteService().objectifs.length">
+    <div class="col">
+        <p class="sm">Un nouvel élément de liste</p>
+        <input type="text" class="txt" value="..." [(ngModel)]="objectifText">
+        <p>{{objectifText}}</p>
+
+
+        <input class="btn" [ngClass]="{'bg_green' : isNotTextEmpty()}" [value]="btnText" (click)="ajoutItem()" >
+        
+    </div>
+    <div class="col">
+        <p class="life-container" *ngFor="let obj of getActiviteService().objectifs; let i = index" (click)="consultAct(i)">{{obj}}</p>
+    </div>
+</div>

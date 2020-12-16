@@ -1,0 +1,20 @@
+<h3>Détail de l'activité</h3>
+<ol>
+    <li>Nom de l'activité : 
+        <span [ngStyle]="isInput && {'display': 'none'}">{{getObjectif(myParam)}}</span>
+        <input [ngStyle]="!isInput && {'display': 'none'}" value="{{getObjectif(myParam)}}" type="text" [(ngModel)]="nouveauNom"> 
+    
+        <div>
+            <button class="btn red" (click)="removeElem(i)">Supprimer</button>
+            <button class="btn blue" [ngStyle]="!isInput && {'display': 'none'}" (click)="saveElem()">Sauvegarder</button>
+            <button class="btn blue" [ngStyle]="isInput && {'display': 'none'}" (click)="showInput()">Modifier</button>
+            <button class="btn green" [ngStyle]="isInput && {'display': 'none'}"(click)="retourHome()">Retour</button>
+        </div>
+        
+    
+    </li>
+
+    
+
+    <li *ngIf="secondParam()">Deuxième param : {{param2}}</li>
+</ol>
